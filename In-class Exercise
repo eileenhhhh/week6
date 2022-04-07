@@ -1,0 +1,12 @@
+# In-class Practice: Regular Expression in R
+
+Origional link to extract:
+[Introduction to Data Science ](https://bookdown.org/hneth/i2ds/)
+
+(?<=\[)[\w\s]* --> everything between the []
+(?<=\()[\S]*  --> everything between the () , none-white space char, but including the last ')'
+(?<=\()[\S]*(?=\)) --> drop the last ')'
+
+.+?(?=\s\|)  AND [\S]+(?=\s\|) does the same thing --> (look for links before the pipe)
+
+(?<=\s\|\s).+ --> (everything after the pipe)
